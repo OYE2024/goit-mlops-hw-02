@@ -1,0 +1,441 @@
+[0m[1mdata.terraform_remote_state.vpc: Reading...[0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.eks.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.eks.module.kms.data.aws_partition.current[0]: Reading...[0m[0m
+[0m[1mmodule.eks.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.eks.module.kms.data.aws_caller_identity.current[0]: Reading...[0m[0m
+[0m[1mmodule.eks.aws_cloudwatch_log_group.this[0]: Refreshing state... [id=/aws/eks/goit-mlops-eks/cluster][0m
+[0m[1mmodule.eks.module.kms.data.aws_partition.current[0]: Read complete after 0s [id=aws][0m
+[0m[1mmodule.eks.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...[0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...[0m[0m
+[0m[1mmodule.eks.data.aws_iam_policy_document.assume_role_policy[0]: Reading...[0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2560088296][0m
+[0m[1mmodule.eks.data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2764486067][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2560088296][0m
+[0m[1mmodule.eks.aws_iam_role.this[0]: Refreshing state... [id=goit-mlops-eks-cluster-20260815202851149000000002][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_iam_role.this[0]: Refreshing state... [id=cpu-nodes-eks-node-group-20260815202851149100000005][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_iam_role.this[0]: Refreshing state... [id=workload-nodes-eks-node-group-20260815202851149000000003][0m
+[0m[1mmodule.eks.data.aws_caller_identity.current: Read complete after 0s [id=725171147384][0m
+[0m[1mmodule.eks.data.aws_iam_session_context.current: Reading...[0m[0m
+[0m[1mmodule.eks.data.aws_iam_session_context.current: Read complete after 0s [id=arn:aws:iam::725171147384:user/oie-cli][0m
+[0m[1mmodule.eks.module.kms.data.aws_caller_identity.current[0]: Read complete after 0s [id=725171147384][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].data.aws_caller_identity.current: Read complete after 0s [id=725171147384][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].data.aws_caller_identity.current: Read complete after 0s [id=725171147384][0m
+[0m[1mdata.terraform_remote_state.vpc: Read complete after 0s[0m
+[0m[1mmodule.eks.aws_security_group.cluster[0]: Refreshing state... [id=sg-054f1e8598114cdf8][0m
+[0m[1mmodule.eks.aws_security_group.node[0]: Refreshing state... [id=sg-05592af9021dab106][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_cluster_4443_webhook"]: Refreshing state... [id=sgrule-1859611091][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_cluster_9443_webhook"]: Refreshing state... [id=sgrule-3496477103][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["egress_all"]: Refreshing state... [id=sgrule-1451666388][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_self_coredns_udp"]: Refreshing state... [id=sgrule-1049991186][0m
+[0m[1mmodule.eks.aws_security_group_rule.cluster["ingress_nodes_443"]: Refreshing state... [id=sgrule-1314189572][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_cluster_kubelet"]: Refreshing state... [id=sgrule-1450736289][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_cluster_443"]: Refreshing state... [id=sgrule-4114088903][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_nodes_ephemeral"]: Refreshing state... [id=sgrule-4157727195][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_cluster_6443_webhook"]: Refreshing state... [id=sgrule-2811563589][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_self_coredns_tcp"]: Refreshing state... [id=sgrule-2596944893][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_cluster_8443_webhook"]: Refreshing state... [id=sgrule-3033084516][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_iam_role_policy_attachment.additional["AmazonSSMManagedInstanceCore"]: Refreshing state... [id=workload-nodes-eks-node-group-20260815202851149000000003-20260815202852458100000006][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_iam_role_policy_attachment.additional["AmazonSSMManagedInstanceCore"]: Refreshing state... [id=cpu-nodes-eks-node-group-20260815202851149100000005-2026081520285264620000000a][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=workload-nodes-eks-node-group-20260815202851149000000003-20260815202852581900000008][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=workload-nodes-eks-node-group-20260815202851149000000003-2026081520285282220000000c][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=cpu-nodes-eks-node-group-20260815202851149100000005-20260815202852636200000009][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=cpu-nodes-eks-node-group-20260815202851149100000005-2026081520285294800000000d][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"]: Refreshing state... [id=workload-nodes-eks-node-group-20260815202851149000000003-2026081520285274850000000b][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"]: Refreshing state... [id=cpu-nodes-eks-node-group-20260815202851149100000005-20260815202852474000000007][0m
+[0m[1mmodule.eks.aws_iam_role_policy_attachment.this["AmazonEKSVPCResourceController"]: Refreshing state... [id=goit-mlops-eks-cluster-20260815202851149000000002-2026081520285299850000000e][0m
+[0m[1mmodule.eks.aws_iam_role_policy_attachment.this["AmazonEKSClusterPolicy"]: Refreshing state... [id=goit-mlops-eks-cluster-20260815202851149000000002-2026081520285302370000000f][0m
+[0m[1mmodule.eks.module.kms.data.aws_iam_policy_document.this[0]: Reading...[0m[0m
+[0m[1mmodule.eks.module.kms.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=260289083][0m
+[0m[1mmodule.eks.module.kms.aws_kms_key.this[0]: Refreshing state... [id=050caa25-4fba-44ee-9503-a29feeaf6d1b][0m
+[0m[1mmodule.eks.module.kms.aws_kms_alias.this["cluster"]: Refreshing state... [id=alias/eks/goit-mlops-eks][0m
+[0m[1mmodule.eks.aws_iam_policy.cluster_encryption[0]: Refreshing state... [id=arn:aws:iam::725171147384:policy/goit-mlops-eks-cluster-ClusterEncryption20260815202914499000000010][0m
+[0m[1mmodule.eks.aws_eks_cluster.this[0]: Refreshing state... [id=goit-mlops-eks][0m
+[0m[1mmodule.eks.aws_iam_role_policy_attachment.cluster_encryption[0]: Refreshing state... [id=goit-mlops-eks-cluster-20260815202851149000000002-20260815202915159000000011][0m
+[0m[1mmodule.eks.aws_ec2_tag.cluster_primary_security_group["Environment"]: Refreshing state... [id=sg-08a4809884f83e8cc,Environment][0m
+[0m[1mmodule.eks.aws_ec2_tag.cluster_primary_security_group["ManagedBy"]: Refreshing state... [id=sg-08a4809884f83e8cc,ManagedBy][0m
+[0m[1mdata.aws_eks_cluster_auth.cluster: Reading...[0m[0m
+[0m[1mmodule.eks.data.tls_certificate.this[0]: Reading...[0m[0m
+[0m[1mdata.aws_eks_cluster_auth.cluster: Read complete after 0s [id=goit-mlops-eks][0m
+[0m[1mmodule.eks.time_sleep.this[0]: Refreshing state... [id=2026-08-15T20:39:14Z][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_launch_template.this[0]: Refreshing state... [id=lt-0fd1e5ac15c4bc789][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_launch_template.this[0]: Refreshing state... [id=lt-09e4b74bd60c9e928][0m
+[0m[1mmodule.eks.data.tls_certificate.this[0]: Read complete after 0s [id=13102e0a8585014b9cde9ab0c4895b6972be2a09][0m
+[0m[1mmodule.eks.aws_iam_openid_connect_provider.oidc_provider[0]: Refreshing state... [id=arn:aws:iam::725171147384:oidc-provider/oidc.eks.eu-west-1.amazonaws.com/id/9BF60CDE47901A1E51AE31451068C198][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [32m+[0m create[0m
+
+Terraform will perform the following actions:
+
+[1m  # module.eks.kubernetes_config_map_v1_data.aws_auth[0][0m will be created
+[0m  [32m+[0m[0m resource "kubernetes_config_map_v1_data" "aws_auth" {
+      [32m+[0m[0m data          = {
+          [32m+[0m[0m "mapAccounts" = jsonencode([])
+          [32m+[0m[0m "mapRoles"    = <<-EOT
+                - "groups":
+                  - "system:bootstrappers"
+                  - "system:nodes"
+                  "rolearn": "arn:aws:iam::725171147384:role/cpu-nodes-eks-node-group-20260815202851149100000005"
+                  "username": "system:node:{{EC2PrivateDNSName}}"
+                - "groups":
+                  - "system:bootstrappers"
+                  - "system:nodes"
+                  "rolearn": "arn:aws:iam::725171147384:role/workload-nodes-eks-node-group-20260815202851149000000003"
+                  "username": "system:node:{{EC2PrivateDNSName}}"
+            EOT
+          [32m+[0m[0m "mapUsers"    = jsonencode([])
+        }
+      [32m+[0m[0m field_manager = "Terraform"
+      [32m+[0m[0m force         = true
+      [32m+[0m[0m id            = (known after apply)
+
+      [32m+[0m[0m metadata {
+          [32m+[0m[0m name      = "aws-auth"
+          [32m+[0m[0m namespace = "kube-system"
+        }
+    }
+
+[1m  # module.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_eks_node_group" "this" {
+      [32m+[0m[0m ami_type               = "AL2_x86_64"
+      [32m+[0m[0m arn                    = (known after apply)
+      [32m+[0m[0m capacity_type          = (known after apply)
+      [32m+[0m[0m cluster_name           = "goit-mlops-eks"
+      [32m+[0m[0m disk_size              = (known after apply)
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_types         = [
+          [32m+[0m[0m "t3.medium",
+        ]
+      [32m+[0m[0m labels                 = {
+          [32m+[0m[0m "Environment" = "mlops"
+          [32m+[0m[0m "NodeGroup"   = "cpu-nodes"
+          [32m+[0m[0m "Workload"    = "cpu"
+        }
+      [32m+[0m[0m node_group_name        = (known after apply)
+      [32m+[0m[0m node_group_name_prefix = "cpu-nodes-"
+      [32m+[0m[0m node_role_arn          = "arn:aws:iam::725171147384:role/cpu-nodes-eks-node-group-20260815202851149100000005"
+      [32m+[0m[0m release_version        = (known after apply)
+      [32m+[0m[0m resources              = (known after apply)
+      [32m+[0m[0m status                 = (known after apply)
+      [32m+[0m[0m subnet_ids             = [
+          [32m+[0m[0m "subnet-05a5c0dd65d6b0f5a",
+          [32m+[0m[0m "subnet-05a72efa3407283c8",
+          [32m+[0m[0m "subnet-08266090368d52c7b",
+        ]
+      [32m+[0m[0m tags                   = {
+          [32m+[0m[0m "Environment" = "mlops"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "cpu-nodes"
+          [32m+[0m[0m "NodeGroup"   = "cpu-nodes"
+        }
+      [32m+[0m[0m tags_all               = {
+          [32m+[0m[0m "Environment" = "mlops"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "cpu-nodes"
+          [32m+[0m[0m "NodeGroup"   = "cpu-nodes"
+        }
+      [32m+[0m[0m version                = "1.30"
+
+      [32m+[0m[0m launch_template {
+          [32m+[0m[0m id      = "lt-09e4b74bd60c9e928"
+          [32m+[0m[0m name    = (known after apply)
+          [32m+[0m[0m version = "1"
+        }
+
+      [32m+[0m[0m node_repair_config (known after apply)
+
+      [32m+[0m[0m scaling_config {
+          [32m+[0m[0m desired_size = 2
+          [32m+[0m[0m max_size     = 3
+          [32m+[0m[0m min_size     = 1
+        }
+
+      [32m+[0m[0m timeouts {}
+
+      [32m+[0m[0m update_config {
+          [32m+[0m[0m max_unavailable_percentage = 33
+        }
+    }
+
+[1m  # module.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_eks_node_group" "this" {
+      [32m+[0m[0m ami_type               = "AL2_x86_64"
+      [32m+[0m[0m arn                    = (known after apply)
+      [32m+[0m[0m capacity_type          = (known after apply)
+      [32m+[0m[0m cluster_name           = "goit-mlops-eks"
+      [32m+[0m[0m disk_size              = (known after apply)
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_types         = [
+          [32m+[0m[0m "t3.medium",
+        ]
+      [32m+[0m[0m labels                 = {
+          [32m+[0m[0m "Environment" = "mlops"
+          [32m+[0m[0m "NodeGroup"   = "workload-nodes"
+          [32m+[0m[0m "Workload"    = "gpu"
+        }
+      [32m+[0m[0m node_group_name        = (known after apply)
+      [32m+[0m[0m node_group_name_prefix = "workload-nodes-"
+      [32m+[0m[0m node_role_arn          = "arn:aws:iam::725171147384:role/workload-nodes-eks-node-group-20260815202851149000000003"
+      [32m+[0m[0m release_version        = (known after apply)
+      [32m+[0m[0m resources              = (known after apply)
+      [32m+[0m[0m status                 = (known after apply)
+      [32m+[0m[0m subnet_ids             = [
+          [32m+[0m[0m "subnet-05a5c0dd65d6b0f5a",
+          [32m+[0m[0m "subnet-05a72efa3407283c8",
+          [32m+[0m[0m "subnet-08266090368d52c7b",
+        ]
+      [32m+[0m[0m tags                   = {
+          [32m+[0m[0m "Environment" = "mlops"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "workload-nodes"
+          [32m+[0m[0m "NodeGroup"   = "workload-nodes"
+        }
+      [32m+[0m[0m tags_all               = {
+          [32m+[0m[0m "Environment" = "mlops"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "workload-nodes"
+          [32m+[0m[0m "NodeGroup"   = "workload-nodes"
+        }
+      [32m+[0m[0m version                = "1.30"
+
+      [32m+[0m[0m launch_template {
+          [32m+[0m[0m id      = "lt-0fd1e5ac15c4bc789"
+          [32m+[0m[0m name    = (known after apply)
+          [32m+[0m[0m version = "1"
+        }
+
+      [32m+[0m[0m node_repair_config (known after apply)
+
+      [32m+[0m[0m scaling_config {
+          [32m+[0m[0m desired_size = 1
+          [32m+[0m[0m max_size     = 2
+          [32m+[0m[0m min_size     = 0
+        }
+
+      [32m+[0m[0m taint {
+          [32m+[0m[0m effect = "NO_SCHEDULE"
+          [32m+[0m[0m key    = "workload"
+          [32m+[0m[0m value  = "gpu"
+        }
+
+      [32m+[0m[0m timeouts {}
+
+      [32m+[0m[0m update_config {
+          [32m+[0m[0m max_unavailable_percentage = 33
+        }
+    }
+
+[1mPlan:[0m [0m3 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  [32m+[0m[0m eks_managed_node_groups            = {
+      [32m+[0m[0m cpu_nodes      = {
+          [32m+[0m[0m autoscaling_group_schedule_arns    = {}
+          [32m+[0m[0m iam_role_arn                       = "arn:aws:iam::725171147384:role/cpu-nodes-eks-node-group-20260815202851149100000005"
+          [32m+[0m[0m iam_role_name                      = "cpu-nodes-eks-node-group-20260815202851149100000005"
+          [32m+[0m[0m iam_role_unique_id                 = "AROA2RV4RSJ4PL5LDBZBZ"
+          [32m+[0m[0m launch_template_arn                = "arn:aws:ec2:eu-west-1:725171147384:launch-template/lt-09e4b74bd60c9e928"
+          [32m+[0m[0m launch_template_id                 = "lt-09e4b74bd60c9e928"
+          [32m+[0m[0m launch_template_latest_version     = 1
+          [32m+[0m[0m launch_template_name               = "cpu_nodes-20260815203914671300000001"
+          [32m+[0m[0m node_group_arn                     = (known after apply)
+          [32m+[0m[0m node_group_autoscaling_group_names = (known after apply)
+          [32m+[0m[0m node_group_id                      = (known after apply)
+          [32m+[0m[0m node_group_labels                  = {
+              [32m+[0m[0m Environment = "mlops"
+              [32m+[0m[0m NodeGroup   = "cpu-nodes"
+              [32m+[0m[0m Workload    = "cpu"
+            }
+          [32m+[0m[0m node_group_resources               = (known after apply)
+          [32m+[0m[0m node_group_status                  = (known after apply)
+          [32m+[0m[0m node_group_taints                  = []
+          [32m+[0m[0m platform                           = "linux"
+        }
+      [32m+[0m[0m workload_nodes = {
+          [32m+[0m[0m autoscaling_group_schedule_arns    = {}
+          [32m+[0m[0m iam_role_arn                       = "arn:aws:iam::725171147384:role/workload-nodes-eks-node-group-20260815202851149000000003"
+          [32m+[0m[0m iam_role_name                      = "workload-nodes-eks-node-group-20260815202851149000000003"
+          [32m+[0m[0m iam_role_unique_id                 = "AROA2RV4RSJ4BWH3QU337"
+          [32m+[0m[0m launch_template_arn                = "arn:aws:ec2:eu-west-1:725171147384:launch-template/lt-0fd1e5ac15c4bc789"
+          [32m+[0m[0m launch_template_id                 = "lt-0fd1e5ac15c4bc789"
+          [32m+[0m[0m launch_template_latest_version     = 1
+          [32m+[0m[0m launch_template_name               = "workload_nodes-20260815203914671600000003"
+          [32m+[0m[0m node_group_arn                     = (known after apply)
+          [32m+[0m[0m node_group_autoscaling_group_names = (known after apply)
+          [32m+[0m[0m node_group_id                      = (known after apply)
+          [32m+[0m[0m node_group_labels                  = {
+              [32m+[0m[0m Environment = "mlops"
+              [32m+[0m[0m NodeGroup   = "workload-nodes"
+              [32m+[0m[0m Workload    = "gpu"
+            }
+          [32m+[0m[0m node_group_resources               = (known after apply)
+          [32m+[0m[0m node_group_status                  = (known after apply)
+          [32m+[0m[0m node_group_taints                  = [
+              [32m+[0m[0m {
+                  [32m+[0m[0m effect = "NO_SCHEDULE"
+                  [32m+[0m[0m key    = "workload"
+                  [32m+[0m[0m value  = "gpu"
+                },
+            ]
+          [32m+[0m[0m platform                           = "linux"
+        }
+    }
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0]: Creating...[0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0]: Creating...[0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0]: Still creating... [00m10s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0]: Still creating... [00m10s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0]: Still creating... [00m20s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0]: Still creating... [00m20s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0]: Still creating... [00m30s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0]: Still creating... [00m30s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0]: Still creating... [00m40s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0]: Still creating... [00m40s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0]: Still creating... [00m50s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0]: Still creating... [00m50s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0]: Still creating... [01m00s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0]: Still creating... [01m00s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0]: Still creating... [01m10s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0]: Still creating... [01m10s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0]: Still creating... [01m20s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0]: Still creating... [01m20s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0]: Still creating... [01m30s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0]: Still creating... [01m30s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0]: Still creating... [01m40s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0]: Still creating... [01m40s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0]: Still creating... [01m50s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0]: Still creating... [01m50s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0]: Still creating... [02m00s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0]: Still creating... [02m00s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0]: Still creating... [02m10s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0]: Still creating... [02m10s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0]: Still creating... [02m20s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0]: Still creating... [02m20s elapsed][0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["workload_nodes"].aws_eks_node_group.this[0]: Creation complete after 2m28s [id=goit-mlops-eks:workload-nodes-20260815205413999500000001][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["cpu_nodes"].aws_eks_node_group.this[0]: Creation complete after 2m29s [id=goit-mlops-eks:cpu-nodes-20260815205413999500000003][0m
+[0m[1mmodule.eks.kubernetes_config_map_v1_data.aws_auth[0]: Creating...[0m[0m
+[0m[1mmodule.eks.kubernetes_config_map_v1_data.aws_auth[0]: Creation complete after 1s [id=kube-system/aws-auth][0m
+[33m╷[0m[0m
+[33m│[0m [0m[1m[33mWarning: [0m[0m[1mArgument is deprecated[0m
+[33m│[0m [0m
+[33m│[0m [0m[0m  with module.eks.aws_iam_role.this[0],
+[33m│[0m [0m  on .terraform/modules/eks/main.tf line 293, in resource "aws_iam_role" "this":
+[33m│[0m [0m 293: resource "aws_iam_role" "this" [4m{[0m[0m
+[33m│[0m [0m
+[33m│[0m [0minline_policy is deprecated. Use the aws_iam_role_policy resource instead.
+[33m│[0m [0mIf Terraform should exclusively manage all inline policy associations (the
+[33m│[0m [0mcurrent behavior of this argument), use the aws_iam_role_policies_exclusive
+[33m│[0m [0mresource as well.
+[33m╵[0m[0m
+[0m[1m[32m
+Apply complete! Resources: 3 added, 0 changed, 0 destroyed.[0m
+[0m[1m[32m
+Outputs:
+
+[0maws_auth_configmap_yaml = <<EOT
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: aws-auth
+  namespace: kube-system
+data:
+  mapRoles: |
+    - rolearn: arn:aws:iam::725171147384:role/cpu-nodes-eks-node-group-20260815202851149100000005
+      username: system:node:{{EC2PrivateDNSName}}
+      groups:
+        - system:bootstrappers
+        - system:nodes
+    - rolearn: arn:aws:iam::725171147384:role/workload-nodes-eks-node-group-20260815202851149000000003
+      username: system:node:{{EC2PrivateDNSName}}
+      groups:
+        - system:bootstrappers
+        - system:nodes
+
+EOT
+cluster_certificate_authority_data = <sensitive>
+cluster_endpoint = "https://9BF60CDE47901A1E51AE31451068C198.gr7.eu-west-1.eks.amazonaws.com"
+cluster_iam_role_arn = "arn:aws:iam::725171147384:role/goit-mlops-eks-cluster-20260815202851149000000002"
+cluster_name = "goit-mlops-eks"
+cluster_version = "1.30"
+configure_kubectl = "aws eks update-kubeconfig --region eu-west-1 --name goit-mlops-eks --profile oie-cli"
+eks_managed_node_groups = {
+  "cpu_nodes" = {
+    "autoscaling_group_schedule_arns" = {}
+    "iam_role_arn" = "arn:aws:iam::725171147384:role/cpu-nodes-eks-node-group-20260815202851149100000005"
+    "iam_role_name" = "cpu-nodes-eks-node-group-20260815202851149100000005"
+    "iam_role_unique_id" = "AROA2RV4RSJ4PL5LDBZBZ"
+    "launch_template_arn" = "arn:aws:ec2:eu-west-1:725171147384:launch-template/lt-09e4b74bd60c9e928"
+    "launch_template_id" = "lt-09e4b74bd60c9e928"
+    "launch_template_latest_version" = 1
+    "launch_template_name" = "cpu_nodes-20260815203914671300000001"
+    "node_group_arn" = "arn:aws:eks:eu-west-1:725171147384:nodegroup/goit-mlops-eks/cpu-nodes-20260815205413999500000003/28d0039a-14e7-dbef-e7ba-c2cbac4064fa"
+    "node_group_autoscaling_group_names" = [
+      "eks-cpu-nodes-20260815205413999500000003-28d0039a-14e7-dbef-e7ba-c2cbac4064fa",
+    ]
+    "node_group_id" = "goit-mlops-eks:cpu-nodes-20260815205413999500000003"
+    "node_group_labels" = tomap({
+      "Environment" = "mlops"
+      "NodeGroup" = "cpu-nodes"
+      "Workload" = "cpu"
+    })
+    "node_group_resources" = tolist([
+      {
+        "autoscaling_groups" = tolist([
+          {
+            "name" = "eks-cpu-nodes-20260815205413999500000003-28d0039a-14e7-dbef-e7ba-c2cbac4064fa"
+          },
+        ])
+        "remote_access_security_group_id" = ""
+      },
+    ])
+    "node_group_status" = "ACTIVE"
+    "node_group_taints" = toset([])
+    "platform" = "linux"
+  }
+  "workload_nodes" = {
+    "autoscaling_group_schedule_arns" = {}
+    "iam_role_arn" = "arn:aws:iam::725171147384:role/workload-nodes-eks-node-group-20260815202851149000000003"
+    "iam_role_name" = "workload-nodes-eks-node-group-20260815202851149000000003"
+    "iam_role_unique_id" = "AROA2RV4RSJ4BWH3QU337"
+    "launch_template_arn" = "arn:aws:ec2:eu-west-1:725171147384:launch-template/lt-0fd1e5ac15c4bc789"
+    "launch_template_id" = "lt-0fd1e5ac15c4bc789"
+    "launch_template_latest_version" = 1
+    "launch_template_name" = "workload_nodes-20260815203914671600000003"
+    "node_group_arn" = "arn:aws:eks:eu-west-1:725171147384:nodegroup/goit-mlops-eks/workload-nodes-20260815205413999500000001/f4d0039a-14ef-d105-acb8-adddb4c99ccb"
+    "node_group_autoscaling_group_names" = [
+      "eks-workload-nodes-20260815205413999500000001-f4d0039a-14ef-d105-acb8-adddb4c99ccb",
+    ]
+    "node_group_id" = "goit-mlops-eks:workload-nodes-20260815205413999500000001"
+    "node_group_labels" = tomap({
+      "Environment" = "mlops"
+      "NodeGroup" = "workload-nodes"
+      "Workload" = "gpu"
+    })
+    "node_group_resources" = tolist([
+      {
+        "autoscaling_groups" = tolist([
+          {
+            "name" = "eks-workload-nodes-20260815205413999500000001-f4d0039a-14ef-d105-acb8-adddb4c99ccb"
+          },
+        ])
+        "remote_access_security_group_id" = ""
+      },
+    ])
+    "node_group_status" = "ACTIVE"
+    "node_group_taints" = toset([
+      {
+        "effect" = "NO_SCHEDULE"
+        "key" = "workload"
+        "value" = "gpu"
+      },
+    ])
+    "platform" = "linux"
+  }
+}
