@@ -1,0 +1,14 @@
+Last login: Sat Aug 15 13:13:41 on ttys000
+➜  goit && cd mlops && cd lesson-5
+➜ kubectl get nodes
+NAME                                        STATUS   ROLES    AGE     VERSION
+ip-10-0-11-61.eu-west-1.compute.internal    Ready    <none>   6m23s   v1.30.14-eks-ecaa3a6
+ip-10-0-12-93.eu-west-1.compute.internal    Ready    <none>   6m32s   v1.30.14-eks-ecaa3a6
+ip-10-0-13-215.eu-west-1.compute.internal   Ready    <none>   6m31s   v1.30.14-eks-ecaa3a6
+
+➜ kubectl cluster-info
+Kubernetes control plane is running at https://9BF60CDE47901A1E51AE31451068C198.gr7.eu-west-1.eks.amazonaws.com
+CoreDNS is running at https://9BF60CDE47901A1E51AE31451068C198.gr7.eu-west-1.eks.amazonaws.com/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+~/goit/mlops/lesson-5
